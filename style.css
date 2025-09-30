@@ -1,0 +1,276 @@
+/* Olympics 2028 Project - style.css
+   Author: Vincent Watchinda, COMP 484 Project 1
+   Olympic colors used as accents:
+   Olympic Blue:   #0081c8
+   Olympic Yellow: #ffd100
+   Olympic Black:  #111
+   Olympic Green:  #009f3d
+   Olympic Red:    #ef3340
+   Purple:    #663399
+*/
+
+html, body {
+	background: #663399;
+	margin: 0;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2.5% 2.5% 0 2.5%;
+	background: #fff;
+	line-height: 1.8;
+	box-sizing: border-box;
+    color: #000;
+}
+
+/* Headings and paragraphs */
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #53688a;
+}
+h1 {
+	font: 2.3em Verdana, Geneva, sans-serif;
+	margin-bottom: .4em;
+	color: #53688a;
+}
+h2 {
+	font: 1.6em Georgia, "Times New Roman", Times, serif;
+	margin-bottom: .2em;
+}
+h3 {
+	font-size: 1.2em;
+	color: #0081c8;
+	border-left: 6px solid #ffd100;
+	padding-left: 0.5em;
+	margin-top: 1.8em;
+}
+p {
+	margin-bottom: 1em;
+}
+
+/* Navigation as vertical bullets */
+nav ul {
+	list-style: disc;
+	padding-left: 1.6em;
+	margin: 1em 0 2em 0;
+}
+nav li {
+	margin-bottom: 0.6em;
+}
+nav a {
+	color: #0081c8;
+	text-decoration: underline;
+	font-weight: bold;
+	padding: 0.08em 0.2em;
+	border-radius: 5px;
+	transition: background 0.13s, color 0.13s;
+}
+
+/* Figure/image styles */
+figure {
+	margin: 1.2em 0;
+	text-align: center;
+}
+figure img {
+	max-width: 95%;
+	border-radius: 7px;
+	border: 1.5px solid #0081c8;
+}
+figcaption {
+	font-size: 0.96em;
+	color: #5d6a7d;
+	margin-top: 0.4em;
+}
+
+/* Pre/code blocks for examples, with left border */
+pre {
+	font-size: 1.1em;
+	color: #fff;
+	padding: .5em 1em;
+	border-left: 1em solid #A68048;
+	background: #666;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	width: 80%;
+	margin: 1em auto;
+	border-radius: 6px;
+}
+pre.wrong { border-left-color: #ef3340; }
+pre.correct { border-left-color: #009f3d; }
+
+/* Details/summary for expandable facts */
+details {
+	margin: 1em 0;
+	background: #e9f3fb;
+	border: 1px solid #ffd100;
+	border-radius: 7px;
+	padding: 0.7em 1em;
+}
+summary {
+	font-weight: 600;
+	color: #0081c8;
+	cursor: pointer;
+}
+
+/* Progress bar */
+progress {
+	width: 170px;
+	height: 1.1em;
+	vertical-align: middle;
+	margin-right: 0.5em;
+}
+progress::-webkit-progress-bar {
+	background: #f2f2f2;
+	border-radius: 8px;
+}
+progress::-webkit-progress-value {
+	background: #0081c8;
+	border-radius: 8px;
+}
+progress::-moz-progress-bar {
+	background: #0081c8;
+	border-radius: 8px;
+}
+
+/* Table styling */
+table {
+	margin-top: 1em;
+	width: 100%;
+	border-collapse: collapse;
+	background: #f7fbff;
+	font-size: 0.97em;
+}
+th, td {
+	padding: 10px;
+	border: 1px solid #c1d3ed;
+	text-align: center;
+}
+th {
+	background: #0081c8;
+	color: #fff;
+	font-weight: 600;
+}
+caption {
+	margin-bottom: 1em;
+	text-align: left;
+	color: #0081c8;
+	font-size: 1em;
+}
+
+/* Definition lists */
+dt {
+	font-style: italic;
+	font-size: 1.2em;
+}
+dd {
+	margin-bottom: 1.4em;
+}
+
+/* Center everything */
+.center {
+	text-align: center;
+}
+
+/* Footer */
+footer {
+	border-top: 1px solid #888;
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 1;
+	margin-top: 1em;
+	background: #0081c8;
+	color: #fff;
+	padding: 0.5em 0;
+	border-top: 2px solid #ffd100;
+    width: 100%;
+}
+
+/* Asides */
+aside {
+	padding: 1em;
+	background: #53688a;
+	color: #fff;
+	margin-bottom: 1em;
+	border-radius: 7px;
+}
+aside h4 {
+	color: #fff;
+}
+
+/* Blockquotes */
+blockquote {
+	font-style: italic;
+	color: #888;
+	margin: 1em 2em;
+}
+
+/* Floating images (right/left) */
+.flowRight {
+	float: right;
+	margin-left: 10px;
+}
+.flowLeft {
+	float: left;
+	margin-right: 10px;
+}
+
+/* Attribute selector examples */
+[lang] {
+	font-style: italic;
+	color: #009f3d;
+}
+[data-country] {
+	font-weight: 500;
+	background: #e7f1fa;
+	border-radius: 4px;
+	padding: 0.05em 0.3em;
+	color: #0081c8;
+}
+[aria-live] {
+	background: #fff5e0;
+	color: #ef3340;
+	padding: 0.28em 0.8em;
+	border-radius: 5px;
+	font-size: 0.97em;
+	display: inline-block;
+	margin-top: 0.5em;
+}
+
+/* Highlight class (for example use) */
+.highlight {
+	background: #ffd100;
+	color: #0081c8;
+	padding: 0.12em 0.38em;
+	border-radius: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+	body {
+		width: 98vw;
+		padding: 0.5em;
+	}
+	main {
+		max-width: 99vw;
+		margin: 0.5em;
+		padding: 0.8em;
+	}
+	nav ul {
+		padding-left: 1.1em;
+	}
+	nav li {
+		margin-bottom: 0.5em;
+	}
+	figure img {
+		max-width: 100%;
+	}
+	pre {
+		width: 99%;
+	}
+}
